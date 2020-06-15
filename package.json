@@ -1,0 +1,22 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "practica de Asincronismo y variantes",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js",
+    "callback:api": "node src/callback/api.js",
+    "promesa": "node src/promesa/index.js",
+    "ejerciciopromesa": "node src/promesa/ejerciciopromesa.js"
+  },
+  "keywords": [
+    "asincronismo",
+    "callback",
+    "promesa"
+  ],
+  "author": "Cristina Vicente",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
