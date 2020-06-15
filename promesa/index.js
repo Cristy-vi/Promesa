@@ -1,21 +1,20 @@
-//ecmascript6
-//misma idea que los callbacks
-//estructura de una promesa:
+// **** ESTRUCTURA DE UNA PROMESA
+// ECMAScript 6
 
 const QUE_PASARA = () => {
-    return new Promise (resolve, reject) => {
-        if (true){
-            resolve('Correcto');
-        } else {
-            reject('Incorrecto');
-        }
+    // resolve si se ejectura de forma correcta
+    // reject si es rechazada
+    return new Promise((resolve, reject) => {
+      if (true) {
+        resolve("Bien echo!");
+      } else {
+        reject("Mal!");
+      }
     });
-
-};
-
-QUE_PASARA()
-    //arrow-function, si todo va bien trabajamos con este
-    .then((response) => console.log(response) )
-    //.catch es un sistema de control de errores
-    .catch((err) => console.error(err) );
-
+  };
+  
+  // ejecutar
+  // al ejecutar una promesa hay unos elementos encadenados que son .then y .catch
+  QUE_PASARA()
+    .then((response) => console.log(response))
+    .catch((err) => console.error(err));
